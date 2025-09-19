@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>كاسات نوفا 2099 - مستقبل التناول الشرابي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Tajawal:wght@400;700&family=El+Messiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-icon" id="logoButton">
+                    <i class="fas fa-glass-whiskey"></i>
+                </div>
+                <div class="logo-text">كاسات نوفا 2099</div>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+
+        <div class="simulator-section">
+            <div class="cup-preview">
+                <div class="cup-container">
+                    <div class="future-cup" id="futureCup">
+                        <div class="cup-body" id="cupBody">
+                            <div class="cup-liquid" id="cupLiquid">
+                                <div class="liquid-wave"></div>
+                                <div class="bubbles-container" id="bubblesContainer"></div>
+                            </div>
+                            <div class="cup-content">
+                                <div class="hologram-display">
+                                    <div class="hologram-text" id="hologramText">نوفا 2099</div>
+                                </div>
+                                <div class="cup-text-display" id="cupTextDisplay" style="font-family: 'Cairo'; color: #ffffff; font-size: 16px;"></div>
+                                <div class="cup-details">
+                                    <div><i class="fas fa-temperature-high"></i> <span id="temperatureValue">درجة الحرارة: 42°C</span></div>
+                                    <div><i class="fas fa-fill-drip"></i> <span id="capacityValue">السعة: 350ml</span></div>
+                                    <div><i class="fas fa-battery-full"></i> <span id="batteryValue">الطاقة: 100%</span></div>
+                                </div>
+                            </div>
+                            <div class="tech-features">
+                                <div class="tech-button" id="tempButton"><i class="fas fa-thermometer-half"></i></div>
+                                <div class="tech-button" id="lightButton"><i class="fas fa-lightbulb"></i></div>
+                                <div class="tech-button" id="chipButton"><i class="fas fa-microchip"></i></div>
+                            </div>
+                            <div class="dynamic-elements" id="dynamicElements">
+                                <div class="floating-particle" style="top: 20%; left: 30%; animation-delay: 0s;"></div>
+                                <div class="floating-particle" style="top: 40%; left: 70%; animation-delay: 2s;"></div>
+                                <div class="floating-particle" style="top: 70%; left: 50%; animation-delay: 4s;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="design-controls">
+                <div class="control-group">
+                    
+<div class="control-group">
+    <h3><i class="fas fa-glass-whiskey"></i> نوع الكأس</h3>
+    <div class="cup-types">
+        <div class="cup-type" data-shape="cylinder"><span class="cup-type-preview"></span> <i class="fas fa-glass-whiskey"></i> أسطواني</div>
+        <div class="cup-type" data-shape="cone"><span class="cup-type-preview"></span> <i class="fas fa-wine-glass-alt"></i> مخروطي</div>
+        <div class="cup-type" data-shape="round"><span class="cup-type-preview"></span> <i class="fas fa-mug-hot"></i> دائري</div>
+        <div class="cup-type" data-shape="classic"><span class="cup-type-preview"></span> <i class="fas fa-glass-martini"></i> كلاسيكي</div>
+        <div class="cup-type" data-shape="futuristic"><span class="cup-type-preview"></span> <i class="fas fa-rocket"></i> مستقبلي</div>
+        <div class="cup-type" data-shape="metal"><span class="cup-type-preview"></span> <i class="fas fa-beer"></i> معدني</div>
+    </div>
+</div>
+
+<h3><i class="fas fa-palette"></i> تصميم الكأس</h3>
+                    <div class="cup-designs">
+                        <div class="cup-design cup-design-1 active" data-design="1"></div>
+                        <div class="cup-design cup-design-2" data-design="2"></div>
+                        <div class="cup-design cup-design-3" data-design="3"></div>
+                        <div class="cup-design cup-design-4" data-design="4"></div>
+                        <div class="cup-design cup-design-5" data-design="5"></div>
+                        <div class="cup-design cup-design-6" data-design="6"></div>
+                    </div>
+                    
+                    <h3><i class="fas fa-tint"></i> لون السائل</h3>
+                    <div class="color-options">
+                        <div class="color-option active" data-liquid="rgba(0, 247, 255, 0.6)" style="background: rgba(0, 247, 255, 0.6);"></div>
+                        <div class="color-option" data-liquid="rgba(255, 0, 214, 0.6)" style="background: rgba(255, 0, 214, 0.6);"></div>
+                        <div class="color-option" data-liquid="rgba(123, 255, 0, 0.6)" style="background: rgba(123, 255, 0, 0.6);"></div>
+                        <div class="color-option" data-liquid="rgba(255, 153, 0, 0.6)" style="background: rgba(255, 153, 0, 0.6);"></div>
+                        <div class="color-option" data-liquid="rgba(204, 0, 255, 0.6)" style="background: rgba(204, 0, 255, 0.6);"></div>
+                    </div>
+                    
+                    <div class="rgb-controls">
+                        <div class="rgb-control">
+                            <label for="liquidR">الأحمر</label>
+                            <input type="range" id="liquidR" class="slider" min="0" max="255" value="0">
+                        </div>
+                        <div class="rgb-control">
+                            <label for="liquidG">الأخضر</label>
+                            <input type="range" id="liquidG" class="slider" min="0" max="255" value="247">
+                        </div>
+                        <div class="rgb-control">
+                            <label for="liquidB">الأزرق</label>
+                            <input type="range" id="liquidB" class="slider" min="0" max="255" value="255">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3><i class="fas fa-magic"></i> نمط الإضاءة</h3>
+                    <div class="slider-container">
+                        <label for="brightness">سطوع الإضاءة: <span id="brightnessValue">70%</span></label>
+                        <input type="range" id="brightness" class="slider" min="0" max="100" value="70">
+                    </div>
+                    <div class="slider-container">
+                        <label for="effectSpeed">سرعة التأثير: <span id="speedValue">5</span></label>
+                        <input type="range" id="effectSpeed" class="slider" min="1" max="10" value="5">
+                    </div>
+                    <div class="slider-container">
+                        <label for="liquidLevel">مستوى السائل: <span id="levelValue">70%</span></label>
+                        <input type="range" id="liquidLevel" class="slider" min="10" max="100" value="70">
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <h3><i class="fas fa-shapes"></i> أنماط التصميم</h3>
+                    <div class="pattern-options">
+                        <div class="pattern-option active" data-pattern="atom" style="background: rgba(0, 247, 255, 0.1);">
+                            <i class="fas fa-atom" style="color: var(--primary);"></i>
+                        </div>
+                        <div class="pattern-option" data-pattern="circle" style="background: rgba(255, 0, 214, 0.1);">
+                            <i class="fas fa-circle-notch" style="color: var(--secondary);"></i>
+                        </div>
+                        <div class="pattern-option" data-pattern="infinity" style="background: rgba(123, 255, 0, 0.1);">
+                            <i class="fas fa-infinity" style="color: var(--accent);"></i>
+                        </div>
+                        <div class="pattern-option" data-pattern="wave" style="background: rgba(255, 153, 0, 0.1);">
+                            <i class="fas fa-wave-square" style="color: #ff9900;"></i>
+                        </div>
+                        <div class="pattern-option" data-pattern="hexagon" style="background: rgba(204, 0, 255, 0.1);">
+                            <i class="fas fa-hexagon" style="color: #cc00ff;"></i>
+                        </div>
+                        <div class="pattern-option" data-pattern="dna" style="background: rgba(0, 119, 255, 0.1);">
+                            <i class="fas fa-dna" style="color: #0077ff;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-group text-controls">
+                    <h3><i class="fas fa-font"></i> نص مخصص على الكأس</h3>
+                    <div class="text-input-group">
+                        <label for="cupText">النص المخصص</label>
+                        <input type="text" id="cupText" class="text-input" placeholder="اكتب النص الذي تريد عرضه على الكأس">
+                    </div>
+                    <div class="font-controls">
+                        <div>
+                            <label for="fontFamily">نوع الخط</label>
+                            <select id="fontFamily" class="font-select">
+                                <option value="Cairo">Cairo</option>
+                                <option value="Tajawal">Tajawal</option>
+                                <option value="El Messiri">El Messiri</option>
+                                <option value="Arial">Arial</option>
+                                <option value="Verdana">Verdana</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="textColor">لون النص</label>
+                            <select id="textColor" class="color-select">
+                                <option value="#ffffff">أبيض</option>
+                                <option value="#00f7ff">أزرق نيون</option>
+                                <option value="#ff00d6">وردي</option>
+                                <option value="#7bff00">أخضر</option>
+                                <option value="#ff9900">برتقالي</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="slider-container">
+                        <label for="fontSize">حجم الخط: <span id="fontSizeValue">16px</span></label>
+                        <input type="range" id="fontSize" class="slider" min="12" max="30" value="16">
+                    </div>
+                </div>
+
+                <div class="control-group saved-designs">
+                    <h3><i class="fas fa-save"></i> التصميمات المحفوظة</h3>
+                    <div class="saved-designs-list" id="savedDesignsList">
+                        <!-- سيتم ملؤها بالتصميمات المحفوظة -->
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="action-btn btn-primary" id="saveDesign">
+                        <i class="fas fa-download"></i> حفظ التصميم
+                    </button>
+                    <button class="action-btn btn-secondary" id="shareDesign">
+                        <i class="fas fa-share-alt"></i> مشاركة
+                    </button>
+                    <button class="action-btn btn-secondary" id="resetDesign">
+                        <i class="fas fa-undo"></i> إعادة ضبط
+                    </button>
+                    <button class="action-btn btn-primary" id="rotateCup">
+                        <i class="fas fa-sync"></i> تدوير الكأس
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="features-section">
+            <h2 class="section-title">ميزات كاسات المستقبل</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h3 class="feature-title">تحكم حراري ذكي</h3>
+                    <p class="feature-desc">حافظ على درجة حرارة مشروبك المثالية لفترة أطول مع نظام التحكم الحراري المتقدم</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="feature-title">تقنية عدم الانسكاب</h3>
+                    <p class="feature-desc">تكنولوجيا متطورة تمنع انسكاب المحتويات حتى عند الانقلاب</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3 class="feature-title">طاقة مستدامة</h3>
+                    <p class="feature-desc">شحن لاسلكي وتقنية حصاد الطاقة لشحن الأجهزة المحمولة</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="feature-title">ذكاء اصطناعي مدمج</h3>
+                    <p class="feature-desc">مساعد افتراضي يقدم توصيات غذائية ويتتبع استهلاك السوائل</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">تعقيم تلقائي</h3>
+                    <p class="feature-desc">أشعة UV مدمجة لتعقيم الكأس تلقائياً بعد كل استخدام</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3 class="feature-title">واقع معزز</h3>
+                    <p class="feature-desc">عروض هولوغرامية تفاعلية تظهر معلومات عن المشروب والتغذية</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2099 كاسات نوفا - مستقبل التناول الشرابي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <!-- زر الواقع المعزز -->
+    <div class="ar-view" id="arView" title="فتح نافذة الواقع المعزز">
+        <i class="fas fa-vr-cardboard"></i>
+    </div>
+
+    <!-- نافذة الواقع المعزز -->
+    <div class="ar-overlay" id="arOverlay" aria-hidden="true">
+        <div class="ar-close" id="arClose" title="إغلاق"><i class="fas fa-times"></i></div>
+        <div class="ar-container" id="arContainer">
+            <!-- سنستخدم model-viewer لعرض نموذج 3D افتراضي -->
+            <!-- ملاحظة: النموذج يحمَل من شبكة خارجية — يمكنك تغييره أو استبداله بمصدر محلي حسب حاجتك -->
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            <model-viewer id="mv"
+                src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                alt="نموذج ثلاثي الأبعاد لكأس نوفا"
+                exposure="1"
+                camera-controls
+                auto-rotate
+                style="width:100%; height:100%;"
+                ar
+            ></model-viewer>
+        </div>
+    </div>
+
+    <!-- إشعار -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i> تم حفظ التصميم بنجاح!
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
